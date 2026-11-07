@@ -1,0 +1,19 @@
+# Tema 3: peça com o marcador 12 (tecla 3 no teclado)
+# Edita os textos entre aspas. Máximo de 12 palavras por "texto" e de 6 ecrãs por tema.
+tema: "TEMA 3 (escrever o título)"
+marker: 12
+dono: "tu"          # quem fala neste tema
+tempo_alvo_min: 2
+ecras:
+  - tipo: facto
+    titulo: "Primeiro subtema"
+    texto: "Uma frase curta e clara."
+    imagem: ""             # opcional, ex.: img/nome.jpg (a imagem fica em stage/img/)
+    fonte: ""              # link da fonte (obrigatório nos factos)
+  - tipo: pergunta
+    titulo: "Pergunta para a turma"
+    texto: ""
+  - tipo: resposta
+    titulo: "Resposta"
+    texto: ""
+    fonte: ""

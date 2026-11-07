@@ -1,0 +1,41 @@
+/* Pensado para projetor antigo (1024x768): fundo claro, texto escuro, letra grande. */
+:root { --fg: #111; --bg: #fff; --accent: #0b57d0; --soft: #e8eefc; }
+* { box-sizing: border-box; }
+html, body {
+  height: 100%; margin: 0; overflow: hidden;
+  background: var(--bg); color: var(--fg);
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+.screen { height: 100vh; padding: 4vh 5vw; display: flex; flex-direction: column; }
+
+.idle, .fecho { align-items: center; justify-content: center; text-align: center; gap: 3vh; }
+.title { font-size: 11vh; margin: 0; font-weight: 800; }
+.hint { font-size: 5vh; margin: 0; }
+.fontes { font-size: 3.4vh; margin: 0; max-width: 90vw; }
+.dots { display: flex; gap: 2vh; margin-top: 4vh; }
+.dot { width: 4vh; height: 4vh; border-radius: 50%; border: 0.6vh solid var(--accent); }
+.dot.on { background: var(--accent); }
+
+.head {
+  display: flex; justify-content: space-between;
+  font-size: 4vh; font-weight: 700; color: var(--accent);
+  border-bottom: 0.6vh solid var(--accent); padding-bottom: 1.5vh;
+}
+.body { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 3vh; }
+.tag {
+  align-self: flex-start; background: var(--accent); color: #fff;
+  font-size: 3.6vh; font-weight: 700; padding: 0.6vh 2vh; border-radius: 1vh;
+}
+.titulo { font-size: 7.5vh; margin: 0; line-height: 1.1; }
+.texto { font-size: 5.6vh; margin: 0; line-height: 1.25; }
+.foto { max-height: 38vh; max-width: 100%; object-fit: contain; align-self: center; }
+.fonte { font-size: 2.8vh; }
+
+.tipo-pergunta .titulo, .tipo-pergunta .texto { color: var(--accent); }
+.tipo-resposta .body { background: var(--soft); padding: 3vh; border-radius: 2vh; }
+
+#status {
+  display: none; position: fixed; right: 1vh; bottom: 1vh;
+  font: 14px monospace; background: #000; color: #0f0; padding: 4px 8px;
+}
+#status.show { display: block; }

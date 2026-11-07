@@ -1,0 +1,17 @@
+[project]
+name = "tabuleiro-vivo"
+version = "0.1.0"
+description = "Apresentação interativa sobre Magnus Carlsen (tabuleiro físico com marcadores ArUco)"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy",
+    "opencv-python",
+    "pillow",
+    "pyyaml",
+    "fastapi",
+    "uvicorn[standard]",
+    "websockets",
+]
+
+[tool.uv]
+package = false
